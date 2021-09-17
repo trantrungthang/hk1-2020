@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name=”viewport” content=”width=device-width, initial-scale=1.0″>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>phukiengiatot</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <SCRIPT LANGUAGE="Javascript">
+        $(document).ready(function() {
+            $("a[href*='#']:not([href='#])").click(function() {
+                let target = $(this).attr("href");
+                $('html,body').stop().animate({
+                    scrollTop: $(target).offset().top
+                }, 1000);
+                event.preventDefault();
+            });
+        });
+    </SCRIPT>
+
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<style type='text/css'>
+    #bttop {
+        background: gold;
+        text-align: center;
+        padding: 15px;
+        position: fixed;
+        bottom: 35px;
+        right: 10px;
+        cursor: pointer;
+        display: none;
+        color: black;
+        font-size: 11px;
+        font-family: Arial, Helvetica, sans-serif
+    }
+    
+    #bttop:hover {
+        border: 1px solid #ffa789;
+        background: #ff6734;
+    }
+</style>
+<div id='bttop'>▲</div>
+<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js' type='text/javascript'></script>
+<script type='text/javascript'>
+    $(function() {
+        $(window).scroll(function() {
+            if ($(this).scrollTop() != 0) {
+                $('#bttop').fadeIn();
+            } else {
+                $('#bttop').fadeOut();
+            }
+        });
+        $('#bttop').click(function() {
+            $('body,html').animate({
+                scrollTop: 0
+            }, 800);
+        });
+    });
+</script>
+<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+<body>
+    <section class="dautrang">
+        <div class="logo">
+            <a href="index.html"><img src="image/logo.png" alt="">
+            </a>
+        </div>
+        <form>
+            <input type="search" placeholder="Tìm kiếm sản phẩm">
+        </form>
+        <p class="giohang"><i class="fas fa-shopping-basket"></i><a href="giohang.html">   Giỏ hàng</a> </p>
+
+    </section>
+    <header>
+        <marquee behavior="scroll" direction="right">
+            <p style="color: orange; font-size: 80; padding: 10px;">Chào mừng bạn đến với của hàng PHỤ KIỆN GIÁ TỐT</p>
+        </marquee>
+        <script type="text/javascript" src="slide.js"></script>
+    </header>
+    <!-- phần menu -->
+    <section class="header">
+        <ul align="">
+            <li><a href="index.html">TRANG CHỦ</a>
+            </li>
+            <li class="dropdown">
+                <a class="dropbtn">
+          DANH MỤC SẢN PHẨM ▼</a>
+                <div class="dropdown-content">
+                    <a href="oplung.html">ỐP LƯNG</a>
+                    <a href="kinhcuongluc.html">KÍNH CƯỜNG LỰC</a>
+                    <a href="cusaccapsac.html">CỦ SẠC - CÁP SẠC</a>
+                    <a href="sacduphong.html">SẠC DỰ PHÒNG</a>
+                    <a href="tainghe.html">TAI NGHE</a>
+                    <a href="loabluetooth.html">LOA BLUETOOTH</a>
+                </div>
+            </li>
+            <li>
+                <a href="chinhsachbaohanh.html">CHÍNH SÁCH BẢO HÀNH</a>
+            </li>
+            <li>
+                <a href="thongtincuahang.html">THÔNG TIN CỬA HÀNG</a>
+            </li>
+            <li>
+                <a href="lienhe.html">LIÊN HỆ</a>
+            </li>
+            <li>
+                <a href="dangky.html">ĐĂNG KÝ</a>
+            </li>
+            <li>
+                <a href="dangnhap.html">ĐĂNG NHẬP</a>
+            </li>
+
+        </ul>
+    </section>
+
+    <div class="banner">
+        <img src="image/banner (1).jpg" alt="">
+    </div>
+
+
+
+
+
+    <div class="sanphammoi">
+        <p>SẢN PHẨM MỚI</p>
+
+    </div>
+    <section class="cacsanpham">
+        <div class="sanpham">
+            <div align="center">
+                <a href="tainghe1.html">
+                    <img src="image/sanpham/tainghe1.jpg" alt="">
+                </a>
+            </div>
+            <h3>Tai nghe Bluetooth Zealot B19 chính hãng</h3>
+            <p>Giá : 479.000 VNĐ</p>
+        </div>
+        <div class="sanpham">
+            <a href="kcl1.html">
+            <div align="center">
+                <img src="image/sanpham/kcl1.jpg" alt=""></a>
+            </div>
+            <h3>Kính cường lực siêu mỏng, 5 lớp chống trầy dùng cho iPhone 11 Series</h3>
+            <p>Giá :88.000VNĐ</p>
+        </div>
+        <div class="sanpham">
+            <a href="sac2.html">
+            <div align="center">
+                <img src="image/sanpham/cusac1.jpg" alt=""></a>
+            </div>
+            <h3>Củ sạc nhanh QGeeM 3 cổng USB </h3>
+            <p>Giá : 289.000VNĐ</p>
+        </div>
+        <div class="sanpham">
+            <a href="sac1.html">
+            <div align="center">
+                <img src="image/sanpham/sacduphong1.png" alt=""></a>
+            </div>
+            <h3>PIN SẠC DỰ PHÒNG ANKER POWERCORE II 10000MAH</h3>
+            <p>Giá : 499.000VNĐ</p>
+        </div>
+    </section>
+
+
+
+
+    </div>
+
+    <div class="sanphammoi">
+        <p>ỐP LƯNG</p>
+    <section class="cacsanpham">
+        <div class="sanpham">
+            <a href="oplung1.html">
+            <div align ="center">
+            <img src="image/sanpham/oplung1.png" alt=""></a>
+            </div><h3>Ốp Lưng IPhone 12 Da Thật</h3>
+            <p>Giá : 309.000VNĐ</p>
+        </div>
+        <div class="sanpham">
+            <div align ="center">
+                <a href="oplung2.html">
+            <img src="image/sanpham/oplung2.jpg" alt=""></a>
+            </div><h3>ỐP LƯNG IPHONE 12 PRO MAX ESR CLASSIC HYBRID - Clear</h3>
+            <p>Giá : 290.000 VNĐ </p>
+        </div>
+        <div class="sanpham">
+            <div align ="center">
+                <a href="oplung3.html">
+            <img src="image/sanpham/oplung3.jpg" alt=""></a>
+            </div><h3>Ốp lưng Xiaomi Mi A1 chống sốc Likgus</h3>
+            <p>Giá : 140.000VNĐ</p>
+        </div>
+        <div class="sanpham">
+            <div align ="center">
+                <a href="oplung4.html">
+            <img src="image/sanpham/oplung4.jpg" alt=""></a>
+            </div><h3>Ốp lưng Galaxy Note 10 Plus GUDA - Da Bò Vân Mil</h3>
+            <p>Giá :  280.000 VNĐ</p>
+        </div>
+        
+    </div>
+
+    <div class="sanphammoi">
+        <p>KÍNH CƯỜNG LỰC</p>
+    <section class="cacsanpham">
+        <div class="sanpham">
+            <a href="kcl1.html">
+            <div align ="center">
+            <img src="image/sanpham/kcl1.jpg" alt=""></a>
+            </div><h3>Kính cường lực siêu mỏng, 5 lớp chống trầy dùng cho iPhone 11 Series</h3>
+            <p>Giá :88.000VNĐ</p>
+        </div>
+        <div class="sanpham">
+            <a href="kcl2.html">
+            <div align ="center">
+            <img src="image/sanpham/kcl2.png" alt=""></a>
+            </div><h3>Kính Cường Lực Chống Vân Tay Zeelot Pureglass 2.5D cho iPhone 11 Full màn hình</h3>
+            <p>Giá : 490.000VNĐ</p>
+        </div>
+        <div class="sanpham">
+            <div align ="center">
+                <a href="kcl3.html">
+            <img src="image/sanpham/kcl3.jpg" alt=" "></a>
+            </div><h3>Miếng dán cường lực Samsung Galaxy S9 Plus hiệu Nillkin Full Keo viền (Đen)</h3>
+            <p>Giá : 95.000VNĐ</p>
+        </div>
+        <div class="sanpham">
+            <div align ="center">
+                <a href="kcl4.html">
+            <img src="image/sanpham/kcl4.png" alt=" "></a>
+            </div><h3>KÍNH CƯỜNG LỰC CAMERA IPHONE 11 PRO ZEELOT - Trong suốt</h3>
+            <p>Giá :  120.000 VNĐ</p>
+        </div>
+        
+    </div>
+    
+
+
+
+    <div class="sanphammoi">
+        <p>CỦ SẠC - CÁP SẠC</p>
+    <section class="cacsanpham">
+        <div class="sanpham">
+            <a href="sac1.html">
+            <div align ="center">
+            <img src="image/sanpham/sac1.jpg" alt=""></a>
+            </div><h3>Adapter Sạc 3 Cổng 3A Hoco C15</h3>
+            <p>Giá : 189.000 VNĐ</p>
+        </div>
+        <div class="sanpham">
+            <div align ="center">
+                <a href="sac2.html">
+            <img src="image/sanpham/cusac1.jpg" alt=""></a>
+            </div><h3>Củ sạc nhanh QGeeM 3 cổng USB </h3>
+            <p>Giá : 289.000VNĐ</p>
+        </div>
+        <div class="sanpham">
+            <div align ="center">
+                <a href="sac3.html">
+            <img src="image/sanpham/capsac1.jpg" alt=""></a>
+            </div><h3>Cáp Pisen Lightning Fast 1000mm AL05-1000</h3>
+            <p>Giá : 120.000VNĐ</p>
+        </div>
+        <div class="sanpham">
+            <div align ="center">
+                <a href="sac4.html">
+            <img src="image/sanpham/capsac2.jpg" alt=""></a>
+            </div><h3>Cab chuyển dổi JH 002</h3>
+            <p>Giá :  120.000 VNĐ</p>
+        </div>
+    </div>
+
+
+    <div class="sanphammoi">
+        <p>SẠC DỰ PHÒNG</p>
+    <section class="cacsanpham">
+        <div class="sanpham">
+            <a href="sdp1.html">
+            <div align ="center">
+            <img src="image/sanpham/sacduphong1.png" alt=""></a>
+            </div><h3>PIN SẠC DỰ PHÒNG ANKER POWERCORE II 10000MAH</h3>
+            <p>Giá : 499.000VNĐ</p>
+        </div>
+        <div class="sanpham">
+            <a href="sdp2.html">
+            <div align ="center">
+            <img src="image/sanpham/sacduphong2.jpg" alt=""></a>
+            </div><h3>PIN SẠC DỰ PHÒNG 20.000 MAH BASEUS PPXCA SẠC NHANH 2 CHIỀU QC 3.0- PD3.0 ( SẠC NHANH IPHONE) </h3>
+            <p>Giá : 590.000VNĐ</p>
+        </div>
+        <div class="sanpham">
+            <a href="sdp3.html">
+            <div align ="center">
+            <img src="image/sanpham/sacduphong3.jpg" alt=""></a>
+            </div><h3>Pin sạc dự phòng Energizer 20000mAh - UE20043</h3>
+            <p>Giá : 1.000.000VNĐ</p>
+        </div>
+        <div class="sanpham">
+            <a href="sdp4.html">
+            <div align ="center">
+            <img src="image/sanpham/sacduphong4.jpg" alt=""></a>
+            </div><h3>Pin dự phòng kiêm sạc không dây Energizer QE10007PQGY</h3>
+            <p>Giá :  790.000</p>
+        </div>
+    </div>
+
+
+
+    <div class="sanphammoi">
+        <p>TAI NGHE</p>
+    <section class="cacsanpham">
+        <div class="sanpham">
+            <a href="tainghe1.html">
+            <div align ="center">
+       
+            <img src="image/sanpham/tainghe1.jpg" alt=""></a>
+            </div><h3>Tai nghe Bluetooth Zealot B19 chính hãng</h3>
+            <p>Giá :  479.000 VNĐ</p>
+        </div>
+        <div class="sanpham">
+            <a href="tainghe2.html">
+            <div align ="center">
+            <img src="image/sanpham/tkd2.png" alt=""></a>
+            </div><h3>Tai nghe True Wireless iWalk Amour Airbuds</h3>
+            <p>Giá : 1.750.000VNĐ</p>
+        </div>
+        <div class="sanpham">
+            <a href="tainghe3.html">
+            <div align ="center">
+            <img src="image/sanpham/tkd1.png" alt=""></a>
+            </div><h3>Tai nghe không dây Huawei Freebuds 4i - Chính hãng</h3>
+            <p>Giá : 1.690.000VNĐ</p>
+        </div>
+        <div class="sanpham">
+            <a href="tainghe4.html">
+            <div align ="center">
+            <img src="image/sanpham/tainghe4.jpg" alt=""></a>
+            </div><h3>Tai nghe bluetooth Redmi Airdots 2 TWS 5.0</h3>
+            <p>Giá : 150.000VNĐ</p>
+        </div>
+    </div>
+
+    <div class="sanphammoi">
+        <p>LOA BLUETOOTH</p>
+        <section class="cacsanpham">
+            <div class="sanpham">
+                <a href="loa1.html">
+                    <div align="center">
+                        <img src="image/sanpham/LOA1.jpg" alt="">
+                </a>
+                </div>
+                <h3>LOA JBL PARTYBOX ON THE GO</h3>
+                <p>Giá : 7.900.000VNĐ</p>
+            </div>
+            <div class="sanpham">
+                <a href="loa2.html">
+                <div align="center">
+                    <img src="image/sanpham/loa2.jpg" alt=""></a>
+                </div>
+                <h3>LOA JBL CLIP 4</h3>
+                <p>Giá : 1.590.000VNĐ</p>
+            </div>
+            <div class="sanpham">
+                <a href="loa3.html">
+                <div align="center">
+                    <img src="image/sanpham/loa3.jpg" alt=""></a>
+                </div>
+                <h3>LOA JBL XTREME 2</h3>
+                <p>Giá : 4.490.000VNĐ</p>
+            </div>
+            <div class="sanpham">
+                <a href="loa4.html">
+                <div align="center">
+            <img src="image/sanpham/loa4.jpg""></a>
+                </div>
+                <h3>LOA MARSHALL EMBERTON CHÍNH HÃNG                                                   </h3>
+                <p>Giá : 3.890.000 VNĐ</p>
+            </div>
+    </div>
+    </section>
+
+
+
+
+
+    <!-- PHẦN CAM KẾT CHẤT LƯỢNG -->
+
+
+
+    <section class="uudiem">
+        <hr>
+        <div class="cacdichvu">
+            <div class="dichvu">
+                <div>
+                    <img src="image/sanpham/dichvu1.png" alt="baohanh">
+                </div>
+                <h3>Chất lượng hàng đầu</h3>
+                <p>Cam kết sản phẩm chính hãng 100%.</p>
+            </div>
+            <div class="dichvu">
+                <div>
+                    <img src="image/sanpham/dichvu2.png" alt="baohanh">
+                </div>
+                <h3>Giá cả hợp lí</h3>
+                <p>Giảm giá & khuyến mại với ưu đãi cực lớn.</p>
+            </div>
+            <div class="dichvu">
+                <div>
+                    <img src="image/sanpham/dichvu3.png" alt="baohanh">
+                </div>
+                <h3>Giao hàng cực nhanh</h3>
+                <p>Chúng tôi cam kết giao hàng trong 24h.</p>
+            </div>
+            <div class="dichvu">
+                <div>
+                    <img src="image/sanpham/dichvu4.png" alt="baohanh">
+                </div>
+                <h3>Hỗ trợ online 24/7</h3>
+                <p>Gọi ngay 0399516993 để được tư vấn.</p>
+            </div>
+        </div>
+
+        <!-- về chúng tôi -->
+        <hr>
+        <section class="vechungtoi">
+
+            <div>
+                <p><i class="fas fa-info-circle"></i> THÔNG TIN</p>
+                <span><a href=""> Hướng dẫn mua hàng</a><span>
+                <span><a href="chinhsachbaohanh.html"> Chính sách bảo hành<span>
+                <span><a href=""> Chính sách đổi trả hàng</a></span>
+                <span><a href="thongtincuahang.html"> Liên hệ - khiếu nại</a></li></span>
+            </div>
+
+
+            <div class="thanhtoan">
+                <p><i class="fas fa-money-check-alt"></i> HỖ TRỢ THANH TOÁN</p>
+                <img src="image/tienmat.png" alt="">
+                <img src="image/atm.png" alt="">
+                <img src="image/visa.png" alt="">
+            </div>
+
+            <!-- <div class="dangkyemail">
+            <p><i class="fas fa-envelope-square"></i>  ĐỂ LẠI MAIL NHẬN NHIỀU ƯU ĐÃI HƠN</p>
+            <input type="email" placeholder="Đăng ký email">
+            <input type="submit" name="dangky" value="ĐĂNG KÝ" placeholder="" id="">
+        </div> -->
+            <div class="mxh">
+                <p>MẠNG XÃ HỘI</p>
+                <a href="https://www.facebook.com/TranTrungThang.02"><img src="image/fb.png" alt="">
+                </a>
+                <a href="https://www.instagram.com/iamthang_93"><img src="image/instagram.png" alt="">
+                </a>
+                <a href="https://www.youtube.com/tvlogger02"><img src="image/youtube.png" alt="">
+                </a>
+            </div>
+            <div class="calendar">
+                <script language="javascript">
+                    monthnames = new Array("January", "Februrary", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+                    var linkcount = 0;
+
+                    function addlink(month, day, href) {
+                        var entry = new Array(3);
+                        entry[0] = month;
+                        entry[1] = day;
+                        entry[2] = href;
+                        this[linkcount++] = entry;
+                    }
+                    Array.prototype.addlink = addlink;
+                    linkdays = new Array();
+                    monthdays = new Array(12);
+                    monthdays[0] = 31;
+                    monthdays[1] = 28;
+                    monthdays[2] = 31;
+                    monthdays[3] = 30;
+                    monthdays[4] = 31;
+                    monthdays[5] = 30;
+                    monthdays[6] = 31;
+                    monthdays[7] = 31;
+                    monthdays[8] = 30;
+                    monthdays[9] = 31;
+                    monthdays[10] = 30;
+                    monthdays[11] = 31;
+                    todayDate = new Date();
+                    thisday = todayDate.getDay();
+                    thismonth = todayDate.getMonth();
+                    thisdate = todayDate.getDate();
+                    thisyear = todayDate.getYear();
+                    thisyear = thisyear % 100;
+                    thisyear = ((thisyear < 50) ? (2000 + thisyear) : (1900 + thisyear));
+                    if (((thisyear % 4 == 0) && !(thisyear % 100 == 0)) || (thisyear % 400 == 0)) monthdays[1] ++;
+                    startspaces = thisdate;
+                    while (startspaces > 7) startspaces -= 7;
+                    startspaces = thisday - startspaces + 1;
+                    if (startspaces < 0) startspaces += 7;
+
+                    document.write("<table border='1'>");
+                    document.write("<tr><td colspan=7 class='monthyear'>" + monthnames[thismonth] + " " + thisyear + "</td></tr>");
+                    document.write("<tr class='weektitle'>");
+                    document.write("<td align= center>Sun</td>");
+                    document.write("<td align= center>Mon</td>");
+                    document.write("<td align= center>Tus</td>");
+                    document.write("<td align= center>Wed</td>");
+                    document.write("<td align= center>Thu</td>");
+                    document.write("<td align= center>Fri</td>");
+                    document.write("<td align= center>Sat</td>");
+                    document.write("</tr>");
+                    document.write("<tr>");
+                    for (s = 0; s < startspaces; s++) {
+                        document.write("<td> </td>");
+                    }
+                    count = 1;
+                    while (count <= monthdays[thismonth]) {
+                        for (b = startspaces; b < 7; b++) {
+                            linktrue = false;
+                            document.write("<td class='weekday'>");
+                            for (c = 0; c < linkdays.length; c++) {
+                                if (linkdays[c] != null) {
+                                    if ((linkdays[c][0] == thismonth + 1) && (linkdays[c][1] == count)) {
+                                        document.write("<a href=\"" + linkdays[c][2] + "\">");
+                                        linktrue = true;
+                                    }
+                                }
+                            }
+                            if (count == thisdate) {
+                                document.write("<font color='FF0000'><strong>");
+                            }
+                            if (count <= monthdays[thismonth]) {
+                                document.write(count);
+                            } else {
+                                document.write(" ");
+                            }
+                            if (count == thisdate) {
+                                document.write("</strong></font>");
+                            }
+                            if (linktrue)
+                                document.write("</a>");
+                            document.write("</td>");
+                            count++;
+                        }
+                        document.write("</tr>");
+                        document.write("<tr>");
+                        startspaces = 0;
+                    }
+                    document.write("</table>");
+                </script>
+        </section>
+
+
+        <!-- Phần cuối trang -->
+        <hr>
+        <footer>
+                <p>© Bản quyền thuộc <b>Phụ Kiện Giá Tốt </b>  |   Design by Trần Trung Thăng</p>
+        </footer>
+</body>
+
+</html>
